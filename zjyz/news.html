@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自驾服务站新闻列表</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body style="min-width: 1200px;">
+<!--通用头部-->
+<header id="header">	
+	<div class="nav">
+		<div class="nav_l">
+			<a href="index.html" class="logo"><img src="images/logo.png" class="ztimg"/></a>
+		</div>
+		<div class="nav_r">
+			<ul>
+				<li>
+                    <a href="index.html">首页</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="about.html" class="cur">关于</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="register.html">注册</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="download.html">下载APP</a>
+                    <span></span>
+               </li>
+			</ul>
+		</div>
+	</div>
+</header>
+<!--con-->
+<section class="news">
+	<div class="newsban">&nbsp;</div>
+	<div class="newslist">
+		<ul>
+			<li>
+				<a href="detail.html" class="ztgd newsd">
+					<img src="images/newspic.jpg" class="ztimg newspic"/>
+					<div class="newstxt">
+						<p class="time">2017 / 06 / 17</p>
+						<p class="title">三加壹共享电动汽车改变你的用车方式</p>
+						<p class="cons">注册即成为三加壹会员，完成实名认证充值一定费用后即车辆不限时使用权，但每次领车均只享受2小时免费使用权，第3小时开始每小时基数收费，后每小时增加费用...</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="detail.html" class="ztgd newsd">
+					<img src="images/newspic.jpg" class="ztimg newspic"/>
+					<div class="newstxt">
+						<p class="time">2017 / 06 / 17</p>
+						<p class="title">三加壹共享电动汽车改变你的用车方式</p>
+						<p class="cons">注册即成为三加壹会员，完成实名认证充值一定费用后即车辆不限时使用权，但每次领车均只享受2小时免费使用权，第3小时开始每小时基数收费，后每小时增加费用...</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="detail.html" class="ztgd newsd">
+					<img src="images/newspic.jpg" class="ztimg newspic"/>
+					<div class="newstxt">
+						<p class="time">2017 / 06 / 17</p>
+						<p class="title">三加壹共享电动汽车改变你的用车方式</p>
+						<p class="cons">注册即成为三加壹会员，完成实名认证充值一定费用后即车辆不限时使用权，但每次领车均只享受2小时免费使用权，第3小时开始每小时基数收费，后每小时增加费用...</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<!--通用底部-->
+<footer>
+	<div class="footer">
+		<div class="foot_t">
+			<div class="lxbox">
+				<img src="images/logo.png" class="ztimg"/>
+				<p>电话：400-880-1234（周一至周五8:00～22:00）<br />地址：深圳市宝安区星河大厦5层 </p>
+			</div>
+			<div class="sysbox">
+				<ul>
+					<li>
+						<img src="images/sys.jpg" class="ztimg"/>
+						<p>关注微博</p>
+					</li>
+					<li>
+						<img src="images/sys.jpg" class="ztimg"/>
+						<p>关注微信</p>
+					</li>				
+				</ul>
+			</div>
+		</div>
+		<div class="foot_b">
+			<p>Copyright © 2017 zjyz. 保留所有权利。京公网安备 xxxxxxxxxx号  </p>
+		</div>
+	</div>
+</footer>
+</body>
+<script type="text/javascript">
+	$(function(){
+		//导航下划线	
+		$('#header .nav_r li').hover(function() {
+			$(this).find('span').removeClass('nav-out').addClass('nav-in');
+		}, function() {
+			$(this).find('span').addClass('nav-out').removeClass('nav-in');
+		});
+	})
+</script>
+</html>

@@ -1,0 +1,78 @@
+@charset "utf-8";
+body{font-family:'微软雅黑'; color:#000;}
+/*首页banner*/
+.block_home_slider { position: relative; behavior: url(js/PIE.htc); margin: 0 auto;} 
+.block_home_slider .slide {position:relative;}
+.block_home_slider .flex-control-paging { display:inline-block; position: absolute; bottom: 20px; left: 50%; margin-left: 40%;}
+.block_home_slider .flex-control-paging li { float: left; }
+.block_home_slider .flex-control-paging li a { background: #333; width: 10px; height: 10px; border-radius: 50%; margin-left: 6px; cursor: pointer; display: block; text-indent: -9000px;}
+.block_home_slider .flex-control-paging li a.flex-active { background: #ff772f;}
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; list-style-type: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+/*首页列表*/
+.sylb{ width: 100%; overflow: hidden; margin: .5% 0;}
+.sylb ul{ width: 101%;}
+.sylb li{ width:24.5%; margin-right: .5%; float: left; position: relative; overflow: hidden;}
+.sylb li img{ width:100%;}
+.sylb li:hover img{ -webkit-transform: scale(1.05); -moz-transform: scale(1.05); -ms-transform: scale(1.05); -o-transform: scale(1.05); transform: scale(1.05);}
+.sylb li .txt{ width:94%; height: 46px; padding: 0 3%; background: rgba(0, 0, 0, 0.6); position: absolute; left: 0; bottom: 0; overflow: hidden;}
+.sylb .txt h3{ font-size: 16px; color: #fff; float: left; line-height: 46px;} 
+.sylb .txt .more{ display: block; float: right; font-size: 14px; color: #fff; text-align: center; width: 26%; height: 24px; line-height: 26px; border: 1px solid #fff; border-radius: 30px; margin-top: 10px;} 
+.sylb .txt .more:hover{ background: #ff772f; border-color: #ff772f;} 
+
+/*新闻列表*/
+.news{ background: #f1f1f1; padding-bottom: 30px;}
+.news .newsban{ width: 100%; height: 450px; margin-bottom: 60px; background: url(../images/newsban.jpg) no-repeat center;}
+.news .newslist{ width: 1180px; padding:0 10px; margin: 0 auto; overflow: hidden;}
+.news .newslist .newsd{ display: block; width: 1180px; background: #fff; margin:1px 0 50px; overflow: hidden; position: relative; top: 0;}
+.news .newslist .newsd .newspic{ width: 520px; float: left;}
+.news .newslist .newsd .newstxt{ width: 570px; float: right; padding:35px 40px 0 50px; overflow: hidden;}
+.news .time{ font-size:18px; color: #888;}
+.news .title{ font-size:28px; line-height: 30px; margin: 15px 0 20px;}
+.news .cons{ font-size:14px; line-height: 28px; height: 52px; overflow: hidden;}
+.news .newslist .newsd:hover{ box-shadow: 6px 6px 6px #ccc;  top: -1px;}
+/*新闻详情*/
+.detail{ padding-bottom: 80px;}
+.detail .mycon{ width: 1140px; margin: 0 auto; padding: 30px; background: #fff;}
+.detail .title{ text-align: center; margin: 30px 0 40px;}
+.detail .ztimg{ margin: 30px auto;}
+.detail .cons{ height: auto;}
+
+/*app下载*/
+.download .downloadban{ height: 870px; width: 100%; background: url(../images/xzban.jpg) no-repeat center top;}
+.downloadban .inner{ width: 930px; height: 745px; padding:145px 135px 0; margin: 0 auto; overflow: hidden;}
+.downloadban .inner .xz_l{ float: left; overflow: hidden; color: #fff;}
+.downloadban .inner .xz_l p{ font-size: 20px; line-height: 34px; margin: 100px 0 25px;}
+.downloadban .inner .xz_l img{ margin-bottom: 15px;}
+.downloadban .inner .xz_r{ width:370px; height: 700px; float: right; position: relative; top: 0;}
+.downloadban .inner .xz_r:hover{ top: -10px;}
+.download .bzbox{ width: 1200px; margin: 0 auto; overflow: hidden;}
+.download .bzbox h3{ font-size: 34px; margin: 40px 0; text-align: center;}
+.download .bzbox ul{ width: 1350px; }
+.download .bzbox li{ width: 302px; float: left; padding-top: 5px; margin:0 147px 50px 0; overflow: hidden;}
+.download .bzbox p{ font-size: 20px; line-height: 36px; margin: 15px 0; text-align: center; color: #666;}
+.download .bzbox li img{ position: relative; top: 0; width: 272px; height: 272px; margin: 0 auto;}
+.download .bzbox li:hover img{ top: -5px;}
+
+/*关于我们*/
+.about .aboutban{ width: 100%; height: 670px; background: url(../images/xzban.jpg) no-repeat center; overflow: hidden;}
+.about .aboutban h3{ font-size: 34px; text-align: center; margin-top: 260px; color: #fff;}
+.aboutcon{ width: 100%; overflow: hidden;}
+.aboutcon li{ width: 100%; overflow: hidden;}
+.aboutcon .imgbox{ width: 50%; float: left;}
+.aboutcon .imgbox img{ width: 100%;;}
+.aboutcon .txtbox{ width: 44%; padding: 3% 3% 0; float: left;}
+.aboutcon .txtbox h3{ font-size: 24px; margin-bottom: 20px;}
+.aboutcon .txtbox p{ font-size: 14px; line-height: 24px;}
+
+/*注册*/
+.zcbox{ width: 100%; height: 800px; background: url(../images/banner1.jpg) no-repeat center;}
+.zcbox .inner{ width: 1200px; margin: 0 auto; overflow: hidden;}
+.zcbox .form_box{ width:540px; margin: 160px 0 0 560px; background: rgba(0, 0, 0, 0.6); padding: 50px 30px;}
+.zcbox .linebox{ width: 100%; margin-bottom:36px; height: 46px; border: 1px solid #fff; border-radius: 8px;}
+.zcbox .linebox label{ width:96px; font-size:18px; color:#fff; background: url(../images/line.jpg) no-repeat right center; float: left; height: 46px; line-height: 46px; text-align: center;}
+.zcbox .linebox input{ width:300px; font-size:16px; height: 46px; line-height: 46px; padding-left: 20px; background: none; color: #f1f1f1;}
+.zcbox .linebox button{ width:124px; font-size:16px; height: 46px; line-height: 46px; border-radius: 0 8px 8px 0; color: #fff; border: 0; float: right; background: #ff772f; cursor: pointer;}
+.zcbox .btn_box{ width: 440px; background:#ff772f; border: none; margin: 0 auto;}
+.zcbox .btn_box button{ width: 100%; float: inherit; border-radius: 8px;}

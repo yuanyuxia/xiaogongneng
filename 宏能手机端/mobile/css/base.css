@@ -1,0 +1,61 @@
+/*公共样式*/
+
+/*1.样式重置*/
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td{
+    padding: 0;
+    margin: 0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    font-family: "微软雅黑";
+    margin: 0 auto;
+}
+
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:link,
+a:visited{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+input{
+    /*1.清除文本框获取焦点时默认的边框阴影*/
+    outline: none;
+    /*2.去除边框*/
+    border: none;
+    /*3.添加边框*/
+    border: 1px solid #ccc;
+}
+
+/*2.添加新的样式*/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom: 1;
+}
+i,b{
+    font-weight: normal;
+}
+
+}

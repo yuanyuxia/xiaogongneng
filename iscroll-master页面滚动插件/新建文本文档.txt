@@ -1,0 +1,10 @@
+页面滚动/滑动效果：
+1.引包:\iscroll-master\build\iscroll.js
+2.写HTML结构
+3.初始化：
+
+<script type="text/javascript">
+    var myScroll = new IScroll('#wrapper',{
+        mouseWheel: true,
+        scrollbars: true
+    });

@@ -1,0 +1,42 @@
+
+body{
+    font-size: 14px;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+   
+}
+.head {
+    width: 100%;
+}
+.close,.user{
+    display: inline-block;
+    line-height: 0.9rem;
+    color:#333;
+}
+.user{ 
+    width: 60%;
+    font-size: 0.36rem;
+    font-weight: 700;
+}
+.close{
+    width: 30%;
+    font-size: 0.5rem;
+    padding-left: 0.3rem;
+}
+.content{
+ padding: 0 0.3rem;
+}
+h3{
+	font-size: 0.34rem;
+	font-weight: 700;
+	margin: 0.5rem 0;
+	color:#333333;
+}
+p{
+	font-size: 0.3rem;
+	line-height: 0.5rem;
+	color:#666666;
+}

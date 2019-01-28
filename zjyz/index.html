@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自驾服务站</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+</head>
+
+<body style="min-width: 1200px;">
+<!--通用头部-->
+<header id="header">	
+	<div class="nav">
+		<div class="nav_l">
+			<a href="index.html" class="logo"><img src="images/logo.png" class="ztimg"/></a>
+		</div>
+		<div class="nav_r">
+			<ul>
+				<li>
+                    <a href="index.html" class="cur">首页</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="about.html">关于</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="register.html">注册</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="download.html">下载APP</a>
+                    <span></span>
+               </li>
+			</ul>
+		</div>
+	</div>
+</header>
+<!--banner-->
+<section>
+	<div class="block_home_slider">
+    		<div id="home_slider" class="flexslider">
+        		<ul class="slides">
+            		<li>
+                		<div class="slide">
+                 		<img src="images/banner1.jpg"/>
+                		</div>
+            		</li>  
+            		<li>
+                		<div class="slide">
+                 		<img src="images/banner1.jpg"/>
+                		</div>
+            		</li>              		
+        		</ul>
+     	</div>
+    </div>
+</section>
+<!--con-->
+<section>
+	<div class="sylb">
+		<ul>
+			<li>
+				<img src="images/sylbs1.jpg" class="ztgd ztimg"/>
+				<div class="txt">
+					<h3>公司介绍</h3>
+					<a href="about.html#ztgs" class="ztgd more">查看详情</a>
+				</div>
+			</li>
+			<li>
+				<img src="images/sylbs2.jpg" class="ztgd ztimg"/>
+				<div class="txt">
+					<h3>网点介绍</h3>
+					<a href="about.html#ztwd" class="ztgd more">查看详情</a>
+				</div>
+			</li>
+			<li>
+				<img src="images/sylbs3.jpg" class="ztgd ztimg"/>
+				<div class="txt">
+					<h3>用车介绍</h3>
+					<a href="about.html#ztyc" class="ztgd more">查看详情</a>
+				</div>
+			</li>
+			<li>
+				<img src="images/sylbs4.jpg" class="ztgd ztimg"/>
+				<div class="txt">
+					<h3>近期新闻</h3>
+					<a href="news.html" class="ztgd more">查看详情</a>
+				</div>
+			</li>
+		</ul>
+    </div>
+</section>
+<!--通用底部-->
+<footer>
+	<div class="footer">
+		<div class="foot_t">
+			<div class="lxbox">
+				<img src="images/logo.png" class="ztimg"/>
+				<p>电话：400-880-1234（周一至周五8:00～22:00）<br />地址：深圳市宝安区星河大厦5层 </p>
+			</div>
+			<div class="sysbox">
+				<ul>
+					<li>
+						<img src="images/sys.jpg" class="ztimg"/>
+						<p>关注微博</p>
+					</li>
+					<li>
+						<img src="images/sys.jpg" class="ztimg"/>
+						<p>关注微信</p>
+					</li>				
+				</ul>
+			</div>
+		</div>
+		<div class="foot_b">
+			<p>Copyright © 2017 zjyz. 保留所有权利。<a href="" target="_blank">京公网安备 xxxxxxxxxx号  </a></p>
+		</div>
+	</div>
+</footer>
+</body>
+<script type="text/javascript">
+	$(function(){
+		//导航下划线	
+		$('#header .nav_r li').hover(function() {
+			$(this).find('span').removeClass('nav-out').addClass('nav-in');
+		}, function() {
+			$(this).find('span').addClass('nav-out').removeClass('nav-in');
+		});
+		
+		//banner轮播	
+		$('#home_slider').flexslider({
+			animation : 'slide',
+			controlNav : true,
+			directionNav : false,
+			animationLoop : true,
+			slideshow : false,
+			useCSS : false
+		});				
+	})
+</script>
+</html>

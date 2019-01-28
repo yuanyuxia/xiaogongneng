@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>自驾服务站新闻详情</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body style="min-width: 1200px;">
+<!--通用头部-->
+<header id="header">	
+	<div class="nav">
+		<div class="nav_l">
+			<a href="index.html" class="logo"><img src="images/logo.png" class="ztimg"/></a>
+		</div>
+		<div class="nav_r">
+			<ul>
+				<li>
+                    <a href="index.html">首页</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="about.html" class="cur">关于</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="register.html">注册</a>
+                    <span></span>
+                </li>
+				<li>
+                    <a href="download.html">下载APP</a>
+                    <span></span>
+               </li>
+			</ul>
+		</div>
+	</div>
+</header>
+<!--con-->
+<section class="news detail">
+	<div class="newsban">&nbsp;</div>
+	<div class="mycon">
+		<p class="time">2017 / 06 / 17</p>
+		<p class="title">三加壹共享电动汽车改变你的用车方式</p>
+		<img src="images/newspic.jpg" class="ztimg"/>
+		<p class="cons">深圳三加壹共享电动汽车服务有限公司是一家以纯电动汽车为载体的同城共享电动汽车营运方，公司以减少雾霾、洁净空气为己任，用纯电动汽车共享模式，达到车辆与道路、场地等资源充分利用，让城市和乡村天蓝、地绿、水清、人和！人与物不以独占为目的，共生共享，自然和谐。
+公司自组“自驾驿站”，以各服务站为中心，用户任意点借车还车，APP一键完成注册、借车、还车、导航、结算、用电管理、商品兑换等。一站式解决购车、乘用、停放、折旧、贬值、物流投送、交通拥堵、空气污染等问题。
+2017年，公司启动同城共享电动汽车全覆盖行动。首批建设约1000个服务站，后期约2000个服务站，每个服务站配置5台车辆，后期根据需要增加或调整。力争年内完成深圳全市布点，2-3年内完成全国主要城市的布局与运营。</p>	</div>
+</section>
+<!--通用底部-->
+<footer>
+	<div class="footer">
+		<div class="foot_t">
+			<div class="lxbox">
+				<img src="images/logo.png" class="ztimg"/>
+				<p>电话：400-880-1234（周一至周五8:00～22:00）<br />地址：深圳市宝安区星河大厦5层 </p>
+			</div>
+			<div class="sysbox">
+				<ul>
+					<li>
+						<img src="images/sys.jpg" class="ztimg"/>
+						<p>关注微博</p>
+					</li>
+					<li>
+						<img src="images/sys.jpg" class="ztimg"/>
+						<p>关注微信</p>
+					</li>				
+				</ul>
+			</div>
+		</div>
+		<div class="foot_b">
+			<p>Copyright © 2017 zjyz. 保留所有权利。京公网安备 xxxxxxxxxx号  </p>
+		</div>
+	</div>
+</footer>
+</body>
+<script type="text/javascript">
+	$(function(){
+		//导航下划线	
+		$('#header .nav_r li').hover(function() {
+			$(this).find('span').removeClass('nav-out').addClass('nav-in');
+		}, function() {
+			$(this).find('span').addClass('nav-out').removeClass('nav-in');
+		});
+	})
+</script>
+</html>
